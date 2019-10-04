@@ -1,0 +1,155 @@
+
+.slidecontainer {
+  width: 75%;
+  height: 23px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; 
+}
+
+#lesscontainer {
+  background-color: #fa968e;
+  width: 33%;
+  border-radius: 10px 0px 0px 10px;
+  border-right: 1px solid #ecd8d847;
+  cursor: pointer;
+}
+
+#relcontainer {
+  background-color: #ca3838;
+  width: 33%;
+  border-right: 1px solid #ecd8d847;
+  cursor: pointer;
+}
+#veryrelcontainer {
+  background-color: #a50d0d;
+  width: 33%;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+}
+
+.imgIcon{
+    margin-top: 25px;   
+    }
+
+.imgIcon.active{
+    background-image: url("../../assets/images/shield.png");
+    width: 26px;
+    height: 31px;
+    margin-top: -15px;
+    margin-left: 45%;
+}
+
+.lessRel ,.relevant, .veryRel{
+margin-top: 10px;
+font-family: sans-serif;
+color: #FFFFFF;
+}
+
+/* Button */
+
+.button {
+    border-radius: 35px;
+    background-color: #fcfcff73;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 18px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    outline:none;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/* media queries */
+
+/* Extra small  <768px */
+@media screen and (max-width: 786px) {
+    .lessRel ,.relevant, .veryRel{
+        margin-top: 10px;
+        font-family: sans-serif;
+        color: #FFFFFF;
+        font-size: 9px;
+        }
+
+        .imgIcon.active{            
+            width: 26px;
+            height: 31px;
+            margin-top: -15px;
+            margin-left: 35%;
+        }
+
+         .button {
+          font-size: 12px;
+          padding: 10px;
+          width: 120px;
+          outline:none; 
+        } 
+  }
+
+/* Small  >=768px */
+  @media screen and (min-width: 786px) {
+    .mainContainer {
+    
+      padding: 100px 25px;  
+         
+
+    }
+
+    .lessRel ,.relevant, .veryRel{
+        margin-top: 10px;
+        font-family: sans-serif;
+        color: #FFFFFF;
+        font-size: small;
+        }
+
+        /* .imgIcon.active{
+          
+            width: 26px;
+            height: 31px;
+            margin-top: -15px;
+            margin-left: 35%;
+        } */
+  }
+  
+
+  /* Medium  >=992px */
+  @media screen and (min-width: 992px) {
+
+
+  }
+
+
+  /* Large >=1200px */
+  @media screen and (min-width: 1200px) {
+
+    
+}

@@ -1,0 +1,24 @@
+<div class="mainContainer">
+  <div class="slidecontainer">
+    
+    <div id="lesscontainer" (click)="onClick($event)">
+      <div class="imgIcon active"></div>
+      <div class="lessRel">LESS RELEVANT</div>
+    
+    </div>
+  
+    <div id="relcontainer" (click)="onClick($event)">
+      <div class="imgIcon "></div>
+      <div class="relevant">RELEVANT</div>
+    </div>
+  
+    <div id="veryrelcontainer" (click)="onClick($event)">
+      <div class="imgIcon "></div>
+      <div class="veryRel">VERY RELEVANT</div>
+    </div>  
+  </div>
+  
+  <br /><br />
+    <button class="button" (click)="resetBtn()"><span>TRY AGAIN</span></button>
+  </div>
+  
